@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload de Notas Fiscais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <h1>Upload de Notas Fiscais</h1>
+    <form method="POST" id="uploadForm" enctype="multipart/form-data">
+        <label for="xmlFile">Selecione o arquivo XML:</label>
+        <input type="file" id="xmlFile" name="xmlFile" accept=".xml" />
+        <button type="submit">Upload</button>
+    </form>
+    <div id="response"></div>
+    <h2>Uploads realizados</h2>
+    <div id="uploadsList"></div>
+</body>
+</html>
